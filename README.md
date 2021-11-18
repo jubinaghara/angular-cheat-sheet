@@ -1,11 +1,12 @@
 # angular tips and trick
 
+# Angular Material Tips and Tricks
 ## Visual Studio Code Tool You Must Have for Angular Development
 https://aka.ms/ab-angular<br>
 https://youtu.be/-g2Dat7z2WQ
 
-# Angular Material Tips and Tricks
-### Angular Material Table Sort Not Working
+
+## Angular Material Table Sort Not Working
 Tried all the tricks, still not able to figure out why sort is not working?
 
 Try this out:
@@ -32,7 +33,7 @@ Try this out:
   ```
   
   ### 
-  # PUT, DELETE not working from angular application but working from Postman
+  ## PUT, DELETE not working from angular application but working from Postman
   
   By default http return type is JSON, if backend is retruning some success message then you must specifiy response type as string.
   
