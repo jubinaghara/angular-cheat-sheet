@@ -35,7 +35,7 @@ Try-2) If you're fetching data from backend server, make sure, sort is initalize
   ### 
   ## PUT, DELETE not working from angular application but working from Postman?
   
-  By default, the http return type is JSON, if the backend is returning some success message then you must specify the response type as a string.
+  By default, the http return type is JSON, if the backend is returning some success message in string format then you must specify the response type as a string.
   ```
     putUser(data: IUser, id: string) {
     return this.httpClient.put(this.apiURL + "/api/Users/" + id, data, {responseType: 'text'});
