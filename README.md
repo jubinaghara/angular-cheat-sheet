@@ -32,4 +32,17 @@ Try this out:
   ```
   
   ### 
+  # PUT, DELETE not working from angular application but working from Postman
+  
+  By default http return type is JSON, if backend is retruning some success message then you must specifiy response type as string.
+  
+  ```
+    putUser(data: IUser, id: string) {
+    return this.httpClient.put(this.apiURL + "/api/Users/" + id, data, {responseType: 'text'});
+  }
+
+  ```
+  
+  
+  
   
