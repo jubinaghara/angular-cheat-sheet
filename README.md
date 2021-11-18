@@ -10,7 +10,7 @@ https://youtu.be/-g2Dat7z2WQ
 Tried all the tricks, still not able to figure out why sort is not working?
 
 Try this out:
-1) Make sure "matColumnDef" name is same as element name.
+Try-1) Make sure "matColumnDef" name is same as element name.
   
   ```
     <ng-container matColumnDef="title">
@@ -20,7 +20,7 @@ Try this out:
   
   ```
   
-2) If you're fetching data from backend server, make sure, sort is initalized after data is received from subscription.
+Try-2) If you're fetching data from backend server, make sure, sort is initalized after data is received from subscription.
   ```
    getAllTitles() {
         this.uiService.loadingStateChanged.next(true);
@@ -33,10 +33,9 @@ Try this out:
   ```
   
   ### 
-  ## PUT, DELETE not working from angular application but working from Postman
+  ## PUT, DELETE not working from angular application but working from Postman?
   
-  By default http return type is JSON, if backend is retruning some success message then you must specifiy response type as string.
-  
+  By default, the http return type is JSON, if the backend is returning some success message then you must specify the response type as a string.
   ```
     putUser(data: IUser, id: string) {
     return this.httpClient.put(this.apiURL + "/api/Users/" + id, data, {responseType: 'text'});
